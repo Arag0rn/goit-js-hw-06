@@ -7,9 +7,12 @@ console.dir(body.style.backgroundColor);
 
 button.addEventListener('click', onClickBodyChanger);
 
+
+
 function onClickBodyChanger(){
-  body.style.backgroundColor = getRandomHexColor() 
-  spanCol.textContent = ` ${getRandomHexColor()}`
+  const getColor = getRandomHexColor()
+  body.style.backgroundColor = getColor;
+  spanCol.textContent = getColor;
 }
 
 function getRandomHexColor() {
@@ -17,4 +20,3 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
-console.log(getRandomHexColor);

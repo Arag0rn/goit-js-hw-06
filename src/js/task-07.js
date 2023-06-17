@@ -4,7 +4,7 @@ const input = document.querySelector('#font-size-control');
 const text = document.querySelector('#text')
 
 input.addEventListener('input', onInputfontRise);
-
+text.style.fontSize = `${input.value}px ` 
 function onInputfontRise(){
  text.style.fontSize = `${input.value}px ` 
 }

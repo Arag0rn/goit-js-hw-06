@@ -9,20 +9,20 @@ const form = document.querySelector(".login-form")
 
 
 form.addEventListener('submit', onSubmitEvent);
-const userObj = {}
+
 
 function onSubmitEvent(even) {
     even.preventDefault();
+    const userObj = {}
     const { email, password} =  even.currentTarget.elements;
     if (email.value === '' || password.value === ''){
-        alert('Всі поля повинні бути заповнені!')
+        alert('Всі поля повинні бути заповнені!') 
          }else {
             userObj.email = email.value,
             userObj.password = password.value
             form.reset()
+            console.log(userObj)
          }
 
-         console.log(userObj);
-   
 
 }

@@ -24,6 +24,5 @@ list.textContent = ingrid
 return list ;
 })
 
-listItems.forEach(item => {
-  ingrList.append(item);
-});
+
+  ingrList.append(...listItems);
